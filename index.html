@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Complete Pokemon Stats Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./resources/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" medida="screen" href="./resources/assets/css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">PokeHome</a>
+        <a href="data.html">PokeData</a>
+        <div class="dropdown">
+          <button class="dropbtn">PokePlots
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <li><a class="dropdown-item" href="andrews.html">PokeTypes</a></li>
+            <li><a class="dropdown-item" href="colorcount.html">PokeColors</a></li>
+            <li><a class="dropdown-item" href="height.html">PokeHeight</a></li>
+            <li><a class="dropdown-item" href="weight.html">PokeWeight</a></li>
+            <li><a class="dropdown-item" href="generation.html">PokeGeneration</a></li>
+          </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">PokeResults
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+
+                <li><a class="dropdown-item" href="typecompare.html">PokeTypes</a></li>
+                <li><a class="dropdown-item" href="colorcompare.html">PokeColors</a></li>
+                <li><a class="dropdown-item" href="heightcompare.html">PokeHeight</a></li>
+                <li><a class="dropdown-item" href="weightcompare.html">PokeWeight</a></li>
+                <li><a class="dropdown-item" href="gencompare.html">PokeGeneration</a></li>
+              </div>
+        </div>
+      </div>
+                            
+		<div class="container">	
+			<div class="row">
+				<div class="col-lg-7 col-md-12">
+					<div class="box">
+						<h1 class="title">Pokemon Predictions</h1>
+						<hr class="light">
+						<p class="text-center">This project is intended to see how Pokemon statistics correlate to various other attributes, and see how likely a pokemon's stats can be predicted by those attributes.</p>
+    					<p class="text-center">There are 6 Pokemon stats: HP (health points), Attack, Defense, Special Attack, Special Defense, and Speed.</p>
+                        <p class="text-center">I looked to see if these stats could be infered by looking at a Pokemon's weight, height, or type.</p>
+                        <p class="text-center">I also mapped out how these stats change over the generations of Pokemon games.</p>
+                        <p class="text-center">I was also interested to see how different types of Pokemon are colored, and how legendary, mythical, and form-changing Pokemon are distributed across generations 1-8.</p>
+					</div>
+					
+				</div>
+				<div class="col-lg">
+					<div class="box">
+						<h3 class="title">PokePlots</h3>
+						<hr class="light">
+						<div class="container">
+							<div class="row" style="padding-bottom: 30px;">
+								<div class="col">
+                                    <ul style="list-style: none;" id="main">
+                                        <li><a href="andrews.html"><img class="rounded-circle mx-auto d-block img-fluid" alt="Stats Andrews Curves (by Type) Part 1" src="resources/assets/plots/type-stats/type-stats1.png" style="width:500px;height:600px;"></a></li>
+                                        <li><a href="andrews.html"><img class="rounded-circle mx-auto d-block img-fluid" alt="Stats Andrews Curves (by Type) Part 2" src="resources/assets/plots/type-stats/type-stats2.png" style="width:500px;height:600px;"></a></li>
+                                        <li><a href="andrews.html"><img class="rounded-circle float-right img-fluid" alt="Stats Andrews Curves (by Type) Part 3" src="resources/assets/plots/type-stats/type-stats3.png" style="width:500px;height:600px;"></a></li>
+                                    </ul>
+                                </div>
+							</div>
+                            <div class="row">
+                                <div class="col" id="menu">
+                                    <ul style="list-style: none;" id="main">
+                                        <li><a href="colorcount.html"><img alt="Coloring Count (by Type) Part 2" src="resources/assets/plots/color-count/colorbytype2.png" class="rounded-circle mx-auto d-block img-fluid" style="width:500px;height:600px;"></a></li>
+                                        <li><a href="colorcount.html"><img alt="Coloring Count (by Type) Part 3" src="resources/assets/plots/color-count/colorbytype3.png" class="rounded-circle float-right img-fluid" style="width:500px;height:600px;"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+							<div class="row">
+                                <div class="col" id="menu">
+                                    <ul style="list-style: none;" id="main">
+                                        <li><a href="height.html"><img alt="Height Distribution (w/ Outliers)" src="resources/assets/plots/height-stats/height_freq.png" class="rounded-circle float-left img-fluid" style="width:500px;height:600px;"></a></li>
+                                        <li><a href="height.html"><img alt="Height Distribution (w/out Outliers)" src="resources/assets/plots/height-stats/shortheight_freq.png" class="rounded-circle float-right img-fluid" style="width:500px;height:600px;"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row" id="menu">
+                                <div class="col">
+                                    <ul style="list-style: none;" id="main">
+                                        <li><a href="height.html"><img alt="Height versus Stats (w/ Outliers)" src="resources/assets/plots/height-stats/height_stats.png" class="rounded-circle float-left img-fluid" style="width:500px;height:600px;"></a></li>
+                                        <li><a href="height.html"><img alt="Height versus Stats (w/out Outliers)" src="resources/assets/plots/height-stats/shortheight_stats.png" class="rounded-circle float-right img-fluid" style="width:500px;height:600px;"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" id="menu">
+                                    <ul style="list-style: none;" id="main">
+                                        <li><a href="weight.html"><img alt="Weight Distribution (w/ Outliers)" src="resources/assets/plots/weight-stats/weight_freq.png" class="rounded-circle float-left img-fluid" style="width:500px;height:600px;"></a></li>
+                                        <li><a href="weight.html"><img alt="Weight Distribution (w/out Outliers)" src="resources/assets/plots/weight-stats/lightweight_freq.png" class="rounded-circle float-right img-fluid" style="width:500px;height:600px;"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" id="menu">
+                                    <ul style="list-style: none;" id="main">
+                                        <li><a href="weight.html"><img alt="Weight versus Stats (w/ Outliers)" src="resources/assets/plots/weight-stats/weight_stats.png" class="rounded-circle float-left img-fluid" style="width:500px;height:600px;"></a></li>
+                                        <li><a href="weight.html"><img alt="Weight versus Stats (w/out Outliers)" src="resources/assets/plots/weight-stats/lightweight_stats.png" class="rounded-circle float-right img-fluid" style="width:500px;height:600px;"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" id="menu">
+                                    <ul style="list-style: none;" id="main">
+                                        <li><a href="generation.html"><img alt="Legendaries per Generation" src="resources/assets/plots/generation-plots/legendaries.png" class="rounded-circle float-left img-fluid" style="width:500px;height:600px;"></a></li>
+                                        <li><a href="generation.html"><img alt="Pokemon with Multiple Forms per Generation" src="resources/assets/plots/generation-plots/forms.png" class="rounded-circle float-right img-fluid" style="width:500px;height:600px;"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <ul style="list-style: none;" id="main">
+									    <li><a href="generation.html"><img alt="Average Stats by Generation" src="resources/assets/plots/generation-plots/statsbygen.png" class="rounded-circle mx-auto d-block img-fluid" style="width:500px;height:600px;"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+  <div class="footer">Copyright &copy; Maxwell Krueger 2021</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  
+</body>
+
+</html>

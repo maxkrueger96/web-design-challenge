@@ -11,8 +11,22 @@
 
 <body>
     <div class="navbar">
-        <a href="index.html">PokeHome</a>
-        <a href="data.html">PokeData</a>
+        <div class="dropdown">
+            <button class="dropbtn">PokeHome
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <li><a class="dropdown-item" href="index.html">Return Home</a></li>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">PokeData
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <li><a class="dropdown-item" href="data.html">Access Data</a></li>
+            </div>
+        </div>
         <div class="dropdown">
           <button class="dropbtn">PokePlots
             <i class="fa fa-caret-down"></i>
@@ -30,7 +44,6 @@
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
-
                 <li><a class="dropdown-item" href="typecompare.html">PokeTypes</a></li>
                 <li><a class="dropdown-item" href="colorcompare.html">PokeColors</a></li>
                 <li><a class="dropdown-item" href="heightcompare.html">PokeHeight</a></li>
@@ -52,7 +65,6 @@
                         <p class="text-center">I also mapped out how these stats change over the generations of Pokemon games.</p>
                         <p class="text-center">I was also interested to see how different types of Pokemon are colored, and how legendary, mythical, and form-changing Pokemon are distributed across generations 1-8.</p>
 					</div>
-					
 				</div>
 				<div class="col-lg">
 					<div class="box">
@@ -61,66 +73,69 @@
 						<div class="container">
 							<div class="row" style="padding-bottom: 30px;">
 								<div class="col">
-                                    <ul style="list-style: none;" id="main">
-                                        <li><a href="andrews.html"><img class="rounded-circle mx-auto d-block img-fluid" alt="Stats Andrews Curves (by Type) Part 1" src="resources/assets/plots/type-stats/type-stats1.png" style="width:500px;height:600px;"></a></li>
-                                        <li><a href="andrews.html"><img class="rounded-circle mx-auto d-block img-fluid" alt="Stats Andrews Curves (by Type) Part 2" src="resources/assets/plots/type-stats/type-stats2.png" style="width:500px;height:600px;"></a></li>
-                                        <li><a href="andrews.html"><img class="rounded-circle float-right img-fluid" alt="Stats Andrews Curves (by Type) Part 3" src="resources/assets/plots/type-stats/type-stats3.png" style="width:500px;height:600px;"></a></li>
-                                    </ul>
+                                    <a href="andrews.html"><img class="rounded-circle mx-auto d-block img-fluid" alt="Stats Andrews Curves (by Type) Part 1" src="resources/assets/plots/type-stats/type-stats1.png" style="width:250px;height:300px;"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="andrews.html"><img class="rounded-circle mx-auto d-block img-fluid" alt="Stats Andrews Curves (by Type) Part 2" src="resources/assets/plots/type-stats/type-stats2.png" style="width:250px;height:300px;"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="andrews.html"><img class="rounded-circle float-right img-fluid" alt="Stats Andrews Curves (by Type) Part 3" src="resources/assets/plots/type-stats/type-stats3.png" style="width:250px;height:300px;"></a>
                                 </div>
 							</div>
                             <div class="row">
-                                <div class="col" id="menu">
-                                    <ul style="list-style: none;" id="main">
-                                        <li><a href="colorcount.html"><img alt="Coloring Count (by Type) Part 2" src="resources/assets/plots/color-count/colorbytype2.png" class="rounded-circle mx-auto d-block img-fluid" style="width:500px;height:600px;"></a></li>
-                                        <li><a href="colorcount.html"><img alt="Coloring Count (by Type) Part 3" src="resources/assets/plots/color-count/colorbytype3.png" class="rounded-circle float-right img-fluid" style="width:500px;height:600px;"></a></li>
-                                    </ul>
+                                <div class="col">
+                                    <a href="colorcount.html"><img alt="Coloring Count (by Type) Part 1" src="resources/assets/plots/color-count/colorbytype1.png" class="rounded-circle float-right img-fluid" style="width:250px;height:300px;"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="colorcount.html"><img alt="Coloring Count (by Type) Part 2" src="resources/assets/plots/color-count/colorbytype2.png" class="rounded-circle mx-auto d-block img-fluid" style="width:250px;height:300px;"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="colorcount.html"><img alt="Coloring Count (by Type) Part 3" src="resources/assets/plots/color-count/colorbytype3.png" class="rounded-circle float-right img-fluid" style="width:250px;height:300px;"></a>
                                 </div>
                             </div>
 							<div class="row">
-                                <div class="col" id="menu">
-                                    <ul style="list-style: none;" id="main">
-                                        <li><a href="height.html"><img alt="Height Distribution (w/ Outliers)" src="resources/assets/plots/height-stats/height_freq.png" class="rounded-circle float-left img-fluid" style="width:500px;height:600px;"></a></li>
-                                        <li><a href="height.html"><img alt="Height Distribution (w/out Outliers)" src="resources/assets/plots/height-stats/shortheight_freq.png" class="rounded-circle float-right img-fluid" style="width:500px;height:600px;"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row" id="menu">
                                 <div class="col">
-                                    <ul style="list-style: none;" id="main">
-                                        <li><a href="height.html"><img alt="Height versus Stats (w/ Outliers)" src="resources/assets/plots/height-stats/height_stats.png" class="rounded-circle float-left img-fluid" style="width:500px;height:600px;"></a></li>
-                                        <li><a href="height.html"><img alt="Height versus Stats (w/out Outliers)" src="resources/assets/plots/height-stats/shortheight_stats.png" class="rounded-circle float-right img-fluid" style="width:500px;height:600px;"></a></li>
-                                    </ul>
+                                    <a href="height.html"><img alt="Height Distribution (w/ Outliers)" src="resources/assets/plots/height-stats/height_freq.png" class="rounded-circle float-left img-fluid" style="width:250px;height:300px;"></a>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col" id="menu">
-                                    <ul style="list-style: none;" id="main">
-                                        <li><a href="weight.html"><img alt="Weight Distribution (w/ Outliers)" src="resources/assets/plots/weight-stats/weight_freq.png" class="rounded-circle float-left img-fluid" style="width:500px;height:600px;"></a></li>
-                                        <li><a href="weight.html"><img alt="Weight Distribution (w/out Outliers)" src="resources/assets/plots/weight-stats/lightweight_freq.png" class="rounded-circle float-right img-fluid" style="width:500px;height:600px;"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col" id="menu">
-                                    <ul style="list-style: none;" id="main">
-                                        <li><a href="weight.html"><img alt="Weight versus Stats (w/ Outliers)" src="resources/assets/plots/weight-stats/weight_stats.png" class="rounded-circle float-left img-fluid" style="width:500px;height:600px;"></a></li>
-                                        <li><a href="weight.html"><img alt="Weight versus Stats (w/out Outliers)" src="resources/assets/plots/weight-stats/lightweight_stats.png" class="rounded-circle float-right img-fluid" style="width:500px;height:600px;"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col" id="menu">
-                                    <ul style="list-style: none;" id="main">
-                                        <li><a href="generation.html"><img alt="Legendaries per Generation" src="resources/assets/plots/generation-plots/legendaries.png" class="rounded-circle float-left img-fluid" style="width:500px;height:600px;"></a></li>
-                                        <li><a href="generation.html"><img alt="Pokemon with Multiple Forms per Generation" src="resources/assets/plots/generation-plots/forms.png" class="rounded-circle float-right img-fluid" style="width:500px;height:600px;"></a></li>
-                                    </ul>
+                                <div class="col">
+                                    <a href="height.html"><img alt="Height Distribution (w/out Outliers)" src="resources/assets/plots/height-stats/shortheight_freq.png" class="rounded-circle float-right img-fluid" style="width:250px;height:300px;"></a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <ul style="list-style: none;" id="main">
-									    <li><a href="generation.html"><img alt="Average Stats by Generation" src="resources/assets/plots/generation-plots/statsbygen.png" class="rounded-circle mx-auto d-block img-fluid" style="width:500px;height:600px;"></a></li>
-                                    </ul>
+                                    <a href="height.html"><img alt="Height versus Stats (w/ Outliers)" src="resources/assets/plots/height-stats/height_stats.png" class="rounded-circle float-left img-fluid" style="width:250px;height:300px;"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="height.html"><img alt="Height versus Stats (w/out Outliers)" src="resources/assets/plots/height-stats/shortheight_stats.png" class="rounded-circle float-right img-fluid" style="width:250px;height:300px;"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="weight.html"><img alt="Weight Distribution (w/ Outliers)" src="resources/assets/plots/weight-stats/weight_freq.png" class="rounded-circle float-left img-fluid" style="width:250px;height:300px;"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="weight.html"><img alt="Weight Distribution (w/out Outliers)" src="resources/assets/plots/weight-stats/lightweight_freq.png" class="rounded-circle float-right img-fluid" style="width:250px;height:300px;"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="weight.html"><img alt="Weight versus Stats (w/ Outliers)" src="resources/assets/plots/weight-stats/weight_stats.png" class="rounded-circle float-left img-fluid" style="width:250px;height:300px;"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="weight.html"><img alt="Weight versus Stats (w/out Outliers)" src="resources/assets/plots/weight-stats/lightweight_stats.png" class="rounded-circle float-right img-fluid" style="width:250px;height:300px;"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="generation.html"><img alt="Legendaries per Generation" src="resources/assets/plots/generation-plots/legendaries.png" class="rounded-circle float-left img-fluid" style="width:250px;height:300px;"></a>
+                                </div>
+                                <div class="col">
+                                    <a href="generation.html"><img alt="Pokemon with Multiple Forms per Generation" src="resources/assets/plots/generation-plots/forms.png" class="rounded-circle float-right img-fluid" style="width:250px;height:300px;"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+									<a href="generation.html"><img alt="Average Stats by Generation" src="resources/assets/plots/generation-plots/statsbygen.png" class="rounded-circle mx-auto d-block img-fluid" style="width:250px;height:300px;"></a>
                                 </div>
                             </div>
 						</div>

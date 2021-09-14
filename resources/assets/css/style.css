@@ -6,7 +6,8 @@ body {
 }
 
 .navbar {
-    background-color: skyblue;
+    height: 80px;
+    background-color: hotpink;
     border-width:2px;
     border-style:solid;
     border-color:black;
@@ -14,16 +15,31 @@ body {
 
 .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin:auto;
+    padding-left:3px;
+    padding-right:3px;
+    float:right;
+}
+
+
+#btnContainer {
+    width: 100%;
+    margin:auto;
+    padding-left:3px;
+    padding-right:3px;
+    float:left;
+}
+
+.navbar-left {
+    margin:auto;
+    padding:7px 0px;
 }
 
 #navbar-img {
-    width: 100%;
-    height: 200%;
-    float: inline-start;
+    width: 200%;
+    height: 75px;
+    float: left;
+    margin:auto;
 }
 
 
@@ -33,27 +49,32 @@ body {
     margin-top: auto;
 }
 
-.navbar-title{
+#page{
     color:darkblue;
     float:left;
     text-decoration: none;
-    padding: 14px 16px;
+    padding: 7px 8px;
     font-size: 50px;
     overflow: scroll;
 
 } 
 
 .navbar-brand{
-    width: 75px;
-    height: 46px;
-    border-radius: 100%;
-    overflow: scroll;
-    text-decoration: none;
-    padding: 14px 16px;
-    text-align: center;
-    font-size: 40px;
-    color: black
+    width:75px;
+    height:46px;
+    border-radius:100%;
+    overflow:scroll;
+    text-decoration:none;
+    padding-left:3px;
+    padding-right:3px;
+    text-align:center;
+    font-size:30px;
+    color:black
 }
+
+.nowrap {
+    white-space: nowrap ;
+  }
 
 ul {
     list-style-type: none;
@@ -63,10 +84,11 @@ ul {
 
 .nav-link {
     color: black;
+    background-color: rgb(189, 55, 140);
     float:left;
     text-decoration: none;
     font-size: x-large;
-    border: 2px mediumturquoise solid;
+    border: 5px rgb(158, 60, 199) dashed;
 }
 
 .navitem.dropdown {
@@ -84,18 +106,22 @@ ul {
 
 
 .dropdown-menu{
-    background-color:lightskyblue;
+    background-color:lightpink;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-button {
-    color: black;
+.btn.btn-info {
     float:left;
+    border-radius: 100%;
     text-decoration: none;
-    font-size: x-large;
-    border: 2px mediumturquoise solid;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+    margin: auto;
 }
 
 .dropdown-menu .dropdown-item{
@@ -139,16 +165,11 @@ img {
     padding-top: 25px; 
 }
 
-p {
-    color: darkred;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px; 
-}
 
 .box {
     margin-top: 50px;
     margin-bottom: 40px;
-    padding: 10px 20px 15px;
+    padding: 5px 10px 7px;
     color: darkslategray;
     background-color: lightgoldenrodyellow;
 }

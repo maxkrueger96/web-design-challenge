@@ -76,14 +76,14 @@ body {
     border: 5px blue dashed;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color:lightpink;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-.dropdown-menu .dropdown-item{
+.dropdown-menu .dropdown-item {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -96,9 +96,11 @@ body {
 
 }
 
-.nav-item.dropdown:hover .dropdown-menu {display: block;}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
-.image-fluid:hover{
+.image-fluid:hover {
     border-color: cyan;
     border-style: solid;
 }
@@ -107,7 +109,7 @@ body {
     border-style: solid; 
 }
 
-.visualization{
+.visualization {
     width: 50%;
     height: 50%;
 }
@@ -178,18 +180,6 @@ body {
 }
 
 
-/* @media all and (max-width: 800px){
-    .navbar {
-        justify-content: space-around;
-    }
-    .navbar a {
-        float: none;
-        display: block;
-    }
-    .container{
-        background-color: pink;
-    }
-    } */
 @-ms-viewport {
 width: device-width;
 }
@@ -197,6 +187,35 @@ width: device-width;
 html {
 -webkit-box-sizing: border-box;
         box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-nav li:not(:first-child) {display: none;}
+    .navbar-nav li.fa.fa-caret-down {
+      float: right;
+      display: block;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+.navbar-nav.responsive {position: relative;}
+.navbar-nav.responsive li.fa.fa-caret-down {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+@media screen and (max-width: 600px) {
+.navbar-nav.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+.btn.btn-primary.btn-large {
+    display: none;
+}
 }
 
 .container {
@@ -260,5 +279,6 @@ padding-left: 15px;
 .container {
     width: 1140px;
     max-width: 100%;
+}
 }
 }

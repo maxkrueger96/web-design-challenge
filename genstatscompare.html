@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Complete Pokemon Stats Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" medida="screen" href="resources/assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid" style="max-width:110%;">
+        <div class="row justify-content-md-center">
+            <nav class="navbar navbar-expand">
+                <div class="col col-3">
+                    <div class="navbar-brand navbar-left" id="btnContainer">
+                        <a href="#"></a><button class="btn btn-info" type="button">PokeStats</button>
+                    </div>
+                </div>
+                <div class="col col-9">
+                    <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html" id="pokehome">PokeHome</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="data.html" id="pokedata">PokeData</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="first_drpdwn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PokePlots</a>
+                                <i class="fa fa-caret-down"></i>
+                                <div class="dropdown-menu"  aria-labelledby="#first_drpdwn">
+                                    <div class="container container-sm">
+                                        <div class="row">
+                                            <a class="dropdown-item" href="andrews.html">PokeTypes</a>
+                                            <a class="dropdown-item" href="colorcount.html">PokeColors</a>
+                                            <a class="dropdown-item" href="height.html">PokeHeight</a>
+                                            <a class="dropdown-item" href="weight.html">PokeWeight</a>
+                                            <a class="dropdown-item" href="generation.html">PokeGeneration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="second_drpdwn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PokeReview</a>
+                                <div class="dropdown-menu"  aria-labelledby="#second_drpdwn">  
+                                    <div class="container container-sm">
+                                        <div class="row">
+                                            <a class="dropdown-item" href="typecompare.html">PokeTypes</a>
+                                            <a class="dropdown-item" href="colorcompare.html">PokeColors</a>
+                                            <a class="dropdown-item" href="heightcompare.html">PokeHeight</a>
+                                            <a class="dropdown-item" href="weightcompare.html">PokeWeight</a>
+                                            <a class="dropdown-item" href="gencompare.html">PokeGeneration</a>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h2>
+                Welcome to the Best Place on Earth for Pokemon Enthusiasts.
+            </h2>
+            
+            <p>
+                <strong>What?</strong>
+            </p>
+            <p>
+                These are initial visualizations and results on the problem of classifying Pokemon by certain attributes.
+            </p>
+            <p>
+                <strong>How??</strong>
+            </p>
+            <p>
+                I've combed through the Pokedex extensively to record these findings about Pokemon classification.
+            </p>
+            <p>
+                Then, I dumped all of my data into a Jupyter Notebook and went to town.
+            </p>
+            <p>
+                <strong>Why?!?</strong>
+            </p>
+            <p>
+                Let's see how well Nintendo and GameFreak were able to distribute features to different Pokemon in a uniform fashion!
+            </p>
+        </div>
+    </div>
+
+    <div container>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="jumbotron">
+                    <h2>
+                        Pokemon Stats: Can we predict them?
+                    </h2>
+                    <p>
+                        There are 6 Pokemon Stats, HP (health points), Attack, Defense, Special Attack, Special Defense, and Speed. Most useful Pokemon will have their stats distributed normally
+                    </p>
+                    <p>
+                        <a class="btn btn-primary btn-large" href="#">Learn more</a>
+                    </p>
+                </div><img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg">
+            </div>
+            <div class="col-md-6">
+                <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg">
+                <div class="jumbotron">
+                    <h2>
+                        Hello, world!
+                    </h2>
+                    <p>
+                        This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+                    </p>
+                    <p>
+                        <a class="btn btn-primary btn-large" href="#">Learn more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer">Copyright &copy; Maxwell Krueger 2021</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

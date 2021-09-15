@@ -47,14 +47,15 @@ body {
     text-align: center;
     width:100%;
     height:100%;
+    flex-grow: 2;
 }
 
-#navbar-img {
-    height:200% !important;
-    width:200% !important;
-
-}
-
+@media screen and (max-width: 720px) {
+    .btn.btn-info {
+        display: none;
+    }
+    }
+    
 .navbar-nav {
     display: flex;
     flex-flow: row wrap;
@@ -64,6 +65,8 @@ body {
     list-style-type: none;
     margin: auto;
 }
+
+
 
 .nav-item a.nav-link {
     color: black;
@@ -210,12 +213,6 @@ html {
     display: block;
     text-align: left;
     }
-}
-
-@media screen and (max-width: 600px) {
-.btn.btn-primary.btn-large {
-    display: none;
-}
 }
 
 .container {

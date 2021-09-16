@@ -15,7 +15,7 @@
             <nav class="navbar navbar-expand">
                 <div class="col col-3">
                     <div class="navbar-brand navbar-left" id="btnContainer">
-                        <a href="index.html"></a><button class="btn btn-info" type="button">PokeStats</button>
+                      <a class="btn btn-info btn-large" href="index.html" role="button">PokeStats</a>
                     </div>
                 </div>
                 <div class="col col-9">
@@ -27,9 +27,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="data.html" id="pokedata">PokeData</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="visualization.html" id="pokedata">PokeVisual</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="visualization.html" role="button" id="first_drpdwn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PokePlots</a>
-                                <i class="fa fa-caret-down"></i>
                                 <div class="dropdown-menu"  aria-labelledby="#first_drpdwn">
                                     <div class="container container-sm">
                                         <div class="row">
@@ -68,7 +70,282 @@
     </div>
 
     <div><p></p></div>
+  
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">PokeVisuals</h1>
+            <p class="lead text-muted">Start your PokeData journey here! Don't be shy, hit any of the buttons below to see and learn more about each image.
+            </p>
+        </div>
+    </div>
+  
+    <div class="album py-5">
+        <div class="container" style= "background-color: lightgoldenrodyellow;">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="d-flex col-md-6 justify-content-space-evenly">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/stats-general/statdensity.png" data-holder-rendered="true">
+                        <div class="middle d-flex justify-content-between align-items-center">
+                            <a href="" class="btn btn-sm btn-outline-secondary" role="button">ViewFull</a>
+                            <a href="" class="btn btn-sm btn-outline-secondary" role="button">Analysis</a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between text-center">
+                                The Average Distribution of PokeStats
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 center-block">
+                    <div class="card mb-4 box-shadow center-block">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/stats-general/statscatters.png" data-holder-rendered="true">
+                        <div class="middle d-flex justify-content-between align-items-center">
+                            <a href="" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>
+                            <a href="" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
+                        </div>
+                        <div class="card-body" style="background-color:deeppink; margin:0;">
+                            <div class="d-flex justify-content-between text-center" style="background-color:lightgoldenrodyellow; border: 3pt solid deeppink;">
+                                <p>The (Lack of) Correlation between PokeStats</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/type-stats/type-stats1.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                PokeStats and PokeTypes: Unwraveling The Andrews Curves (Fig 1)
+                                <div class="btn-group">
+                                    <a href="" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>
+                                    <a href="" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/type-stats/type-stats2.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                PokeStats and PokeTypes: Unwraveling The Andrews Curves (Fig 2)
+                                <div class="btn-group">
+                                    <a href="andrews.html" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>
+                                    <a href="typecompare.html" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/type-stats/type-stats3.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                PokeStats and PokeTypes: Unwraveling The Andrews Curves (Fig 3)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/generation-plots/forms.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                Counting Multi-Form Pokemon over the Generations
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/generation-plots/statsbygen.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                Average Stats for Each Generation's New Pokemon
+                                <div class="btn-group">
+                                    <a href="generation.html" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>
+                                    <a href="genstatscompare.html" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/generation-plots/legendaries.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                Counting Legendary and Mythical Pokemon over the Generations
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/color-count/colorbytype1.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                PokeTypes and their Amazing Technicolors (Fig 1)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/color-count/colorbytype2.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                PokeTypes and their Amazing Technicolors (Fig 2)
+                                <div class="btn-group">
+                                    <a href="colorcount.html" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>
+                                    <a href="colorcompare.html" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/color-count/colorbytype3.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                PokeTypes and their Amazing Technicolors (Fig 3)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-3">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/weight-stats/weight_freq.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                PokeWeight Distribution
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/weight-stats/weight_stats.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                Poke and Goliath: Is there a correlation between PokeWeight and PokeStats?
+                                <div class="btn-group-4">
+                                    <a href="weight.html" class="btn btn-sm btn-outline-secondary" id="wview" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/weight-stats/lightweight_freq.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group-4">
+                                    Not Without my Pokemon: Weight Distribution with No Outliers
+                                    <a href="weightcompare.html" class="btn btn-sm btn-outline-secondary" id="wanalysis" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/weight-stats/lightweight_stats.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                A Look at PokeWeight versus PokeStats without Outliers
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-3">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/height-stats/height_freq.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                PokeHeight Distribution
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/height-stats/height_stats.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    Poke and Goliath Part 2: Is there a correlation between PokeHeight and PokeStats?
+                                    <a href="height.html" class="btn btn-sm btn-outline-secondary" id="hview" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/height-stats/shortheight_freq.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    Not Without my Pokemon Part 2: Height Distribution with No Outliers
+                                    <a href="heightcompare.html" class="btn btn-sm btn-outline-secondary" id="hanalysis" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/height-stats/shortheight_stats.png" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                A Look at PokeHeight versus PokeStats without Outliers
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <footer>
         <div class="footer">
             Copyright &copy; Maxwell Krueger 2021
@@ -78,6 +355,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.4/holder.js"></script>
 </body>
 
 </html>

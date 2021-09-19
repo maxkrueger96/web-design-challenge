@@ -103,15 +103,6 @@ body {
     display: block;
 }
 
-.image-fluid:hover {
-    border-color: cyan;
-    border-style: solid;
-}
-.image-active {
-    border-color:mediumturquoise;
-    border-style: solid; 
-}
-
 .col-3 {
     size: 33.33%;
 }

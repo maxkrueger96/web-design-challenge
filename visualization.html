@@ -74,297 +74,253 @@
     <div class="jumbotron text-center">
         <div class="container">
             <h1 class="jumbotron-heading">PokeVisuals</h1>
-            <p class="lead text-muted">Start your PokeData journey here! Don't be shy, hit any of the buttons below to see and learn more about each image.
+            <p class="lead text-muted">Start your PokeData journey here! Don't be shy, hover over any of the images below to learn more about each image.
             </p>
         </div>
     </div>
-  
-    <div class="album">
-        <div class="container py-5 mr-auto ml-auto" id="albumcont">
-            <div class="d-flex flex-row">
-                <div class="card box-shadow">
-                    <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/stats-general/statdensity.png" data-holder-rendered="true">
-                    <div class="middle">
-                        <a href="generalstats.html" class="btn btn-sm btn-outline-secondary" role="button">ViewFull</a>
-                        <a href="genstatscompare.html" class="btn btn-sm btn-outline-secondary" role="button">Analysis</a>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text"></p>
-                        <div class="card-text text-center">
-                            The Average Distribution of PokeStats
-                        </div>
-                    </div>
-                </div>
-                <div class="card box-shadow">
-                    <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/stats-general/statscatters.png" data-holder-rendered="true">
-                    <div class="middle">
-                        <a href="scattermatrix.html" class="btn btn-sm btn-outline-secondary" role="button">ViewFull</a>
-                        <a href="scattercompare.html" class="btn btn-sm btn-outline-secondary" role="button">Analysis</a>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text text-center">
-                            The (Lack of) Correlation between PokeStats
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/type-stats/type-stats1.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                PokeStats and PokeTypes: Unwraveling The Andrews Curves (Fig 1)
-                                <div class="btn-group">
-                                    <a href="" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>
-                                    <a href="" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/type-stats/type-stats2.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                PokeStats and PokeTypes: Unwraveling The Andrews Curves (Fig 2)
-                                <div class="btn-group">
-                                    <a href="andrews.html" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>
-                                    <a href="typecompare.html" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
-                                </div>
-                                
-                            </div>
-                        </div>
+    <div class="container" style="background-color: lightgoldenrodyellow; padding:2.5%;">
+        <div class="card-group">
+            <div class="card col-md-12" style="margin-right:2.5%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/generation-plots/statsbygen.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="generationstats.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="generationstatscompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/type-stats/type-stats3.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                PokeStats and PokeTypes: Unwraveling The Andrews Curves (Fig 3)
-                            </div>
-                        </div>
-                    </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">PokeStats: Generations 1-8</h5>
                 </div>
             </div>
-            <div class='row'>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/generation-plots/forms.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                Counting Multi-Form Pokemon over the Generations
-                            </div>
-                        </div>
+            <div class="card col-md-12" style="margin-left:2.5%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/generation-plots/cumstatsbygen.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="generationstats.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="generationstatscompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
                     </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/generation-plots/statsbygen.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                Average Stats for Each Generation's New Pokemon
-                                <div class="btn-group">
-                                    <a href="generation.html" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>
-                                    <a href="genstatscompare.html" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/generation-plots/legendaries.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                Counting Legendary and Mythical Pokemon over the Generations
-                            </div>
-                        </div>
-                    </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">The Cumulative Average of <p>PokeStats over the Generations</p></h5>
                 </div>
             </div>
-            <div class='row'>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/color-count/colorbytype1.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                PokeTypes and their Amazing Technicolors (Fig 1)
-                            </div>
-                        </div>
+        </div>
+        <div class="card-group">
+            <div class="card col-md-12" style="margin-right:2.5%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/type-stats/type-stats1.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="andrews.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="typecompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/color-count/colorbytype2.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                PokeTypes and their Amazing Technicolors (Fig 2)
-                                <div class="btn-group">
-                                    <a href="colorcount.html" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>
-                                    <a href="colorcompare.html" class="btn btn-sm btn-outline-secondary" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/color-count/colorbytype3.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                PokeTypes and their Amazing Technicolors (Fig 3)
-                            </div>
-                        </div>
-                    </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">PokeStats and PokeTypes: <p>Unwraveling Andrews Curves (Fig 1)</p>
+                    </h5>
                 </div>
             </div>
-            <div class='row'>
-                <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/weight-stats/weight_freq.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                PokeWeight Distribution
-                            </div>
-                        </div>
+            <div class="card col-md-12">
+                <img class="card-img" src="resources/assets/plots/type-stats/type-stats2.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="andrews.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="typecompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/weight-stats/weight_stats.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                Poke and Goliath: Is there a correlation between PokeWeight and PokeStats?
-                                <div class="btn-group-4">
-                                    <a href="weight.html" class="btn btn-sm btn-outline-secondary" id="wview" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/weight-stats/lightweight_freq.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group-4">
-                                    Not Without my Pokemon: Weight Distribution with No Outliers
-                                    <a href="weightcompare.html" class="btn btn-sm btn-outline-secondary" id="wanalysis" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/weight-stats/lightweight_stats.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                A Look at PokeWeight versus PokeStats without Outliers
-                            </div>
-                        </div>
-                    </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">PokeStats and PokeTypes: <p>Unwraveling Andrews Curves (Fig 2)</p></h5>
                 </div>
             </div>
-            <div class='row'>
-                <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/height-stats/height_freq.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                PokeHeight Distribution
-                            </div>
-                        </div>
+            <div class="card col-md-12" style="margin-left:2.5%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/type-stats/type-stats3.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="andrews.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="typecompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
                     </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">PokeStats and PokeTypes: <p>Unwraveling Andrews Curves (Fig 3)</p></h5>
                 </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/height-stats/height_stats.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    Poke and Goliath Part 2: Is there a correlation between PokeHeight and PokeStats?
-                                    <a href="height.html" class="btn btn-sm btn-outline-secondary" id="hview" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">ViewFull</a>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card col-md-12" style="margin-right:1.25%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/weight-stats/weight_freq.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="weight.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="weightcompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
                     </div>
+                <div class="card-header text-center h-100">
+                    
+                    
+                    <h5 class="card-title">PokeWeight Distribution</h5>
                 </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/height-stats/shortheight_freq.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    Not Without my Pokemon Part 2: Height Distribution with No Outliers
-                                    <a href="heightcompare.html" class="btn btn-sm btn-outline-secondary" id="hanalysis" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;">Analysis</a>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+            <div class="card col-md-12" style="margin-right:1.25%; padding: 0; margin-left:1.25%">
+                <img class="card-img" src="resources/assets/plots/weight-stats/weight_stats.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="weight.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="weightcompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
                     </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">Poke and Goliath: <p>Is there a correlation between PokeWeight and PokeStats?</p></h5>
                 </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="resources/assets/plots/height-stats/shortheight_stats.png" data-holder-rendered="true">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                A Look at PokeHeight versus PokeStats without Outliers
-                            </div>
-                        </div>
+            </div>
+            <div class="card col-md-12" style="margin-right:1.25%; padding: 0; margin-left:1.25%">
+                <img class="card-img" src="resources/assets/plots/weight-stats/lightweight_freq.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="lightweight.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="lightweightcompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
                     </div>
+                <div class="card-header text-center h-100">
+                    
+                    
+                    <h5 class="card-title">PokeWeight Distribution <p>(Outliers Removed)</p></h5>
+                </div>
+            </div>
+            <div class="card col-md-12" style="margin-left:1.25%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/weight-stats/lightweight_stats.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="weight.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="weightcompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100">
+                    
+                    
+                    <h5 class="card-title">PokeWeight and PokeStats <p>(Outliers Removed)</p></h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card col-md-12" style="margin-right:2.5%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/stats-general/statdensity.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="generalstats.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="genstatscompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100">
+                    
+                    
+                    <h5 class="card-title">PokeStat Density Estimation</h5>
+                </div>
+            </div>
+            <div class="card col-md-12" style="margin-left:2.5%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/stats-general/statscatters.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="scattermatrix.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="scattercompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">PokeStat Correlations <p>(or lack thereof)</p></h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card col-md-12" style="margin-left:2.5%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/generation-plots/forms.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="generation.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="gencompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100">
+                    
+                    <h5 class="card-title">Counting Multi-Form Pokemon<p>over the Generations</p>                   </h5>
+                </div>
+            </div>
+            <div class="card col-md-12" style="margin-left:2.5%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/generation-plots/legendaries.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="generation.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="gencompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">Counting Legendary Pokemon <p>over the Generations</p>
+                    </h5>
+                </div>
+            </div>
+            <div class="card col-md-12" style="margin-left:2.5%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/generation-plots/formslegends.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="generation.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="gencompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">Comparing Legendary and <p>Multi-Form Pokemon Distribution</p></h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card col-md-12" style="margin-right:1.25%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/height-stats/height_freq.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="height.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="heightcompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">PokeHeight Distribution</h5>
+                </div>
+            </div>
+            <div class="card col-md-12" style="margin-right:1.25%; padding: 0; margin-left:1.25%">
+                <img class="card-img" src="resources/assets/plots/height-stats/height_stats.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="height.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="heightcompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">Poke and Goliath 2: <p>Is there a correlation between PokeHeight and PokeStats?</p></h5>
+                </div>
+            </div>
+            <div class="card col-md-12" style="margin-right:1.25%; padding: 0; margin-left:1.25%">
+                <img class="card-img" src="resources/assets/plots/height-stats/shortheight_freq.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="shortheight.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="shortheightcompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100 h-100">
+                    <h5 class="card-title">PokeHeight Distribution <p>(Outliers Removed)</p></h5>
+                </div>
+            </div>
+            <div class="card col-md-12" style="margin-left:1.25%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/height-stats/shortheight_stats.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="height.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="heightcompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100">
+                    
+                    
+                    <h5 class="card-title">PokeHeight and PokeStats <p>(Outliers Removed)</p></h5>
+                </div>
+            </div>
+        </div>
+        <div class="card-group" style="margin-bottom:2.5%">
+            <div class="card col-md-12" style="margin-right:1.25%">
+                <img class="card-img" src="resources/assets/plots/color-count/colorbytype1.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="colorcount.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="colorcompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">PokeTypes and their Amazing Technicolor Dream Figure 1
+                    </h5>
+                </div>
+            </div>
+            <div class="card col-md-12" style="margin-left:1.25%; padding: 0; margin-right:1.25%">
+                <img class="card-img" src="resources/assets/plots/color-count/colorbytype2.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="colorcount.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="colorcompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">PokeTypes and their Amazing Technicolor Dream Figure 2
+                    </h5>
+                </div>
+            </div>
+            <div class="card col-md-12" style="margin-left:1.25%; padding: 0;">
+                <img class="card-img" src="resources/assets/plots/color-count/colorbytype3.png" alt="Card image cap">
+                    <div class="card-img-overlay d-flex" style="justify-content: center;">
+                        <a href="colorcount.html" class="btn btn-light d-flex" style="align-self: center;" role="button">View Full</a>
+                        <a href="colorcompare.html" class="btn btn-light d-flex" style="align-self: center;" role="button">Analysis</a>
+                    </div>
+                <div class="card-header text-center h-100">
+                    <h5 class="card-title">PokeTypes and their Amazing Technicolor Dream Figure 3</h5>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="parent">
-        <div class="div1"> </div>
-        <div class="div2"> </div>
-        <div class="div3"> </div>
-        <div class="div4"> </div>
-        <div class="div5"> </div>
-        <div class="div6"> </div>
-        <div class="div7"> </div>
-        <div class="div8"> </div>
-        <div class="div9"> </div>
-        <div class="div10"> </div>
-        <div class="div11"> </div>
-        <div class="div12"> </div>
-        <div class="div13"> </div>
-        <div class="div14"> </div>
-        <div class="div15"> </div>
-        <div class="div16"> </div>
-        <div class="div17"> </div>
-        <div class="div18"> </div>
-        <div class="div19"> </div>
-        <div class="div20"> </div>
-    </div>
-    
     <footer>
         <div class="footer">
             Copyright &copy; Maxwell Krueger 2021

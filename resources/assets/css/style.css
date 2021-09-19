@@ -58,7 +58,7 @@ body {
 
 .navbar-nav {
     display:flex;
-    flex-flow:row wrap;
+    flex-flow:row;
     size: 50%;
     background-color: rgb(189, 55, 140);
     border: 5px rgb(158, 60, 199) dashed;
@@ -112,13 +112,12 @@ body {
     border-style: solid; 
 }
 
-.visualization {
-    width: 50%;
-    height: 50%;
-}
-
 .col-3 {
     size: 33.33%;
+}
+
+.table-responsive {
+    background-color: lightgoldenrodyellow;
 }
 
 .jumbotron {
@@ -171,16 +170,17 @@ body {
 }
 
 .carousel-item {
-    height: 512px;
+    height: 600px;
 }
 
 .carousel-item > img {
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
-    height: 512px;
-}
+    width: 80%;
+    min-width: 80%;
+    height: 600px;
+    }
   
 
 .footer{
@@ -200,100 +200,50 @@ body {
 	bottom: 0;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    }
-    
-.div1 { grid-area: 1 / 3 / 2 / 4; }
-.div2 { grid-area: 1 / 5 / 2 / 6; }
-.div3 { grid-area: 2 / 2 / 3 / 3; }
-.div4 { grid-area: 2 / 4 / 3 / 5; }
-.div5 { grid-area: 2 / 6 / 3 / 7; }
-.div6 { grid-area: 3 / 1 / 4 / 2; }
-.div7 { grid-area: 3 / 3 / 4 / 4; }
-.div8 { grid-area: 3 / 5 / 4 / 6; }
-.div9 { grid-area: 3 / 5 / 4 / 6; }
-.div10 { grid-area: 3 / 7 / 4 / 8; }
-.div11 { grid-area: 4 / 2 / 5 / 3; }
-.div12 { grid-area: 4 / 4 / 5 / 5; }
-.div13 { grid-area: 4 / 6 / 5 / 7; }
-.div14 { grid-area: 5 / 1 / 6 / 2; }
-.div15 { grid-area: 5 / 3 / 6 / 4; }
-.div16 { grid-area: 5 / 5 / 6 / 6; }
-.div17 { grid-area: 5 / 7 / 6 / 8; }
-.div18 { grid-area: 6 / 2 / 7 / 3; }
-.div19 { grid-area: 6 / 4 / 7 / 5; }
-.div20 { grid-area: 6 / 6 / 7 / 7; }
-
-/* .album {
-    display:flex;
-    justify-content: space-evenly !important;
-
-} */
-
-#albumcont {
-    background-color: lightgoldenrodyellow;
+.card-group{
+    padding: 1%;
 }
 
-.d-flex.flex-row {
-    flex-flow: row;
-    align-items: center;
-    align-content:space-around;
-    justify-content: space-evenly;
-}
-
-.card.box-shadow {
-    position: relative;
-    width: 50%;
-    flex: 1 1 0px;
-  }
-  
-  .card-img-top {
+  .card-img{
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
-  }
-  
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
+    background-color: lightgoldenrodyellow;
   }
 
-  .btn.btn-sm.btn-outline-secondary {
-      background-color: pink;
-      color:blue;
-      border:2pt solid deeppink
+  .btn.btn-light.d-flex {
+      background-color: deepskyblue;
+      color:deeppink;
+      border:2pt solid deeppink;
+      transition: .5s ease;
+      opacity: 0;
+      font-size: larger;
+      max-height:50%;
   }
   
-  .card.mb-4.box-shadow:hover .card-img-top {
-    opacity: 0.3;
+  .card:hover .card-img {
+    opacity: 0.2;
   }
   
-  .card.mb-4.box-shadow:hover .middle {
+  .card:hover .btn {
     opacity: 1;
   }
 
-  .card-body {
+  .card {
     background-color:pink;
     margin:0;
   }
 
-  .card-text {
+  .card-header {
     background-color: pink;
-    color: blue;
-    font-size: 16px;
-    /* padding: 16px 32px; */
+    color: mediumblue;
+    max-height: 95%;
+    outline: none;
+  }
+
+  .card-title {
+      font-size: 48 pt;
+      outline: none;
   }
 
 
@@ -307,7 +257,7 @@ html {
 }
 
 @media screen and (max-width: 600px) {
-    .navbar-nav li:not(:first-child) {display: none;}
+    .navbar-nav li:not(:nth-child(3)) {display: none;}
     .navbar-nav li.fa.fa-caret-down {
       float: right;
       display: block;
@@ -334,8 +284,8 @@ html {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: none;
+    padding-left: none;
 }
 
 @media (min-width: 576px) {
@@ -393,4 +343,9 @@ html {
     max-width: 100%;
 }
 }
+@media screen and (min-width: 768px) {
+    .card-header {display:none}
+    .btn.btn-light.d-flex {display:none}
+    }
+
 }

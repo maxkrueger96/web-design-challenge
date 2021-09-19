@@ -82,7 +82,7 @@
                 <strong>What?</strong>
             </p>
             <p style="font-style: italic; font-size: 125%;">
-                These are initial visualizations and results on the problem of classifying Pokemon by certain attributes.
+                These are initial visualizations and results on the problem of classifying Pokemon using certain attributes. Given a Pokemon's size, color, type, etc, can I accurately predict how high its stats are? How well does a Pokemon's stats correlate with its other characteristics? Are stats distributed evenly among all of the several different varieties of Pokemon?
             </p>
             <p style="font-size: 150%;">
                 <strong>How??</strong>
@@ -116,7 +116,7 @@
                     <p>
                         We certainly have some outliers, with each stat having a minimum of around 10 and a maximumn of around 200. Of course, this is easily explained by the "baby"/initial form Pokemon and, on the other side of the spectrum, the legendary Pokemon.
                     </p>
-                        Babies and legends aside, the summary statistics remain essentially the same, just with a slight decrease in variuance. More on PokeStats if you hit the link below!
+                        Babies and legends aside, the summary statistics remain essentially the same, just with a slight decrease in variance. After a bit of data cleaning, I started to investiagte how the six stats interact with one another. For example, does a Pokemon's attack stat tell me anything about that Pokemon's speed?More on PokeStats if you hit the link below!
                     </p>
                     <p>
                         
@@ -206,8 +206,14 @@
                     </li>
                     <li data-slide-to="18" data-target="#home-carousel">
                     </li>
+                    <li data-slide-to="19" data-target="#home-carousel">
+                    </li>
+                    <li data-slide-to="20" data-target="#home-carousel">
+                    </li>
                 </ol>
+
                 <div class="carousel-inner">
+                    
                     <div class="carousel-item active">
                         <img class="d-block w-100" alt="Carousel Bootstrap First" src="resources/assets/plots/stats-general/statdensity.png">
                         <div class="carousel-caption d-none d-md-block">
@@ -290,17 +296,17 @@
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" alt="Carousel Bootstrap Eleventh" src="resources/assets/plots/type-stats/type-stats1.png">
-                        <a class="carousel-caption d-none d-md-block" href="typecompare.html">
+                        <div class="carousel-caption d-none d-md-block" href="typecompare.html">
                             <h4>
-                                <a class=caption-link href="typecompare.html">First Group of Pokemon Monotyping Adrews Curves</a>
+                                <a class=caption-link href="typecompare.html">First Group of Pokemon Monotyping Andrews Curves</a>
                             </h4>
-                        </a>
+                        </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" alt="Carousel Bootstrap Twelfth" src="resources/assets/plots/type-stats/type-stats2.png">
                         <div class="carousel-caption d-none d-md-block">
                             <h4>
-                                <a class=caption-link href="typecompare.html">Second Group of Pokemon Monotyping Adrews Curves</a>
+                                <a class=caption-link href="typecompare.html">Second Group of Pokemon Monotyping Andrews Curves</a>
                             </h4>
                         </div>
                     </div>
@@ -308,7 +314,7 @@
                         <img class="d-block w-100" alt="Carousel Bootstrap Thirteenth" src="resources/assets/plots/type-stats/type-stats3.png">
                         <div class="carousel-caption d-none d-md-block">
                             <h4>
-                                <a class=caption-link href="typecompare.html">Third Group of Pokemon Monotyping Adrews Curves</a>
+                                <a class=caption-link href="typecompare.html">Third Group of Pokemon Monotyping Andrews Curves</a>
                             </h4>
                         </div>
                     </div>
@@ -316,20 +322,28 @@
                         <img class="d-block w-100" alt="Carousel Bootstrap Fourteenth" src="resources/assets/plots/generation-plots/statsbygen.png">
                         <div class="carousel-caption d-none d-md-block">
                             <h4>
-                                <a class=caption-link href="typecompare.html">How Average Stats of New Pokemon have Changed over Generations</a>
+                                <a class=caption-link href="generationstatscompare.html">Changes in Pokemon Stat Distribution over the Generations</a>
                             </h4>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" alt="Carousel Bootstrap Fifteenth" src="resources/assets/plots/generation-plots/legendaries.png">
+                        <img class="d-block w-100" alt="Carousel Bootstrap Fifteenth" src="resources/assets/plots/generation-plots/cumstatsbygen.png">
                         <div class="carousel-caption d-none d-md-block">
                             <h4>
-                                <a class=caption-link href="gencompare.html">Lenedaries/Mythical Pokemon Introduced each Generation</a>
+                                <a class=caption-link href="generationstatscompare.html">Cumulative Averages of Pokemon Stats over the Generations</a>
                             </h4>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" alt="Carousel Bootstrap Sixteenth" src="resources/assets/plots/generation-plots/forms.png">
+                        <img class="d-block w-100" alt="Carousel Bootstrap Sixteenth" src="resources/assets/plots/generation-plots/legendaries.png">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>
+                                <a class=caption-link href="gencompare.html">Legendaries/Mythical Pokemon Introduced each Generation</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" alt="Carousel Bootstrap Seventeenth" src="resources/assets/plots/generation-plots/forms.png">
                         <div class="carousel-caption d-none d-md-block">
                             <h4>
                                 <a class=caption-link href="gencompare.html">Multi-form Pokemon Introduced each Generation</a>
@@ -337,7 +351,15 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" alt="Carousel Bootstrap Seventeenth" src="resources/assets/plots/color-count/colorbytype1.png">
+                        <img class="d-block w-100" alt="Carousel Bootstrap Eightteenth" src="resources/assets/plots/generation-plots/forms.png">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>
+                                <a class=caption-link href="gencompare.html">Multi-form Pokemon versus Legendary Pokemon</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" alt="Carousel Bootstrap Nineteenth" src="resources/assets/plots/color-count/colorbytype1.png">
                         <div class="carousel-caption d-none d-md-block">
                             <h4>
                                 <a class=caption-link href="colorcompare.html">Pokemon Color Distribution for each Monotyping, Part 1</a>
@@ -345,7 +367,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" alt="Carousel Bootstrap Eightteenth" src="resources/assets/plots/color-count/colorbytype2.png">
+                        <img class="d-block w-100" alt="Carousel Bootstrap Twentieth" src="resources/assets/plots/color-count/colorbytype2.png">
                         <div class="carousel-caption d-none d-md-block">
                             <h4>
                                 <a class=caption-link href="colorcompare.html">Pokemon Color Distribution for each Monotyping, Part 2</a>
@@ -353,7 +375,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" alt="Carousel Bootstrap Nineteenth" src="resources/assets/plots/color-count/colorbytype3.png">
+                        <img class="d-block w-100" alt="Carousel Bootstrap Twenty-First" src="resources/assets/plots/color-count/colorbytype3.png">
                         <div class="carousel-caption d-none d-md-block">
                             <h4>
                                 <a class=caption-link href="colorcompare.html">Pokemon Color Distribution for each Monotyping, Part 3</a>

@@ -1,28 +1,15 @@
 import pandas as pd
+from urlscript import tablelinks, pokemon
 
-path = './resources/data/pokemon.csv'
-pokemon = pd.read_csv(path)
+#first lets make each pokemon's name a link to an online pokemon database
+urls =  dict.fromkeys(pokemon.name)
+htmls = dict.fromkeys(pokemon.name)
+tablelinks(urls,htmls)
 
-#get rid of gigamax and mega forms
-gmax_names = [p for p in pokemon.name if 'Gmax' in p or 'Mega' in p and p != 'Meganium']
-gmax_megas = pd.Series(gmax_names,name='name')
-gmax_megas = pokemon.merge(gmax_megas)
-for p in pokemon.name:
-    if 'Gmax' in p or 'Mega' in p:
-        if p == 'Meganium':
-            pass
-        else:
-            pokemon.drop(pokemon.loc[pokemon.name == p].index,axis=0,inplace=True)
-
-#get rid of type effectiveness columns
-types = pokemon.typing.drop_duplicates()
-monotypes = []
-for t in types:
-    if '~' not in t:
-        monotypes.append(t)
-effectives = [f'{t.lower()}_attack_effectiveness' for t in monotypes if t != 'Flying']
-effectives.append('fly_attack_effectiveness')
-pokemon.drop(columns=effectives,inplace=True)
+for n in pokemon.name:
+    pokemon.replace(n,htmls[n],inplace=True)
 
 #convert to html and save
-pokemon.to_html('data.html')
+pokemon.set_index(pokemon.pokedex_number,inplace=True)
+pokemon.drop(columns="pokedex_number",inplace=True)
+pokemon.to_html("urltable.html",escape=False)

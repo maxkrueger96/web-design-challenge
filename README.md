@@ -1,2 +1,4 @@
 # wed-design-challenge
 Repo for HW on HTML and CSS
+
+My website is a bit larger than first anticipated, due to continuoius inspiration for new visualizations. While the answer to my original research question, if one can predict a pokemon's stats based on certain attributes, was essentially negative overall, I managed to make some cool plots that show off how stats and attributes have been distributed to Pokemon during design. In particular, the scatterplot matrix comparing every stat pair shows how no one stat can likely tell you much about another, other than a statistically-incignificant positive relationship. 

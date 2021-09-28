@@ -15,15 +15,15 @@
       <div class="row justify-content-md-center">
         <nav class="navbar navbar-expand">
           <div class="col col-3">
-            <div class="navbar-brand navbar-left" id="btnContainer">
-              <a class="btn btn-info btn-large btn-large" href="index.html" role="button">PokeStats</a>
+            <div class="navbar-brand navbar-left">
+              <a class="btn btn-info btn-large" href="index.html" role="button">PokeStats</a>
             </div>
           </div>
           <div class="col col-9">
             <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html" id="pokehome">PokeHome</a>
+                  <a class="nav-link" href="index.html" id="pokehome"><nobr>PokeHome</nobr></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="data.html" id="pokedata">PokeData</a>
@@ -72,14 +72,35 @@
 
     <div><p></p></div>
 
-    <h2 style="text-align: center;">Here is the cleaned dataset used for this analysis.</h2>
+    <h2 style="text-align: center; color: rgb(255, 203, 5);
+    text-shadow:0 2px 1px rgb(42, 117, 187), 
+    0 4px 1px rgb(47, 107, 182),
+    0 5px 1px rgb(52, 97, 177),
+    0 6px 1px rgb(57, 87, 172),
+    0 7px 1px rgb(62, 77, 167);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(199, 160, 8); font-size:40px">Here is the cleaned dataset used for this analysis.</h2>
     <p></p>
-    <h4 style="text-align: center;">I removed unnessesary columns, i.e those giving type effectiveness data.</h4>
+    <h4 style="text-align: center; color: rgb(255, 203, 5);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(199, 160, 8); font-size:30px">I removed unnessesary columns, i.e those giving type effectiveness data.</h4>
     <p></p>
-    <h4 style="text-align: center;">I removed any rows with duplicate pokedex numbers,</h4> <h4 style="text-align: center;">which correspond to the different forms of certain Pokemon, as they would affect the stats data.</h4>
-    <h3 style="text-align: center; font-weight:bold;">Click on a Pokemon's Name to Learn Even More!</h3>
-    <div class="d-flex downloader" style= "justify-content:center">
-      <a href="resources/data/pokemon.csv" class="btn btn-primary btn-lg" tabindex="-1" role="button" style="background-color: lightpink; border: 2pt solid darkmagenta; color:blue;"><i class="fa fa-download"> Download </i></a>
+    <h4 style="text-align: center; color: rgb(255, 203, 5);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(199, 160, 8); font-size:30px">I removed any rows with duplicate pokedex numbers,</h4> 
+    <h4 style="text-align: center; color: rgb(255, 203, 5);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(199, 160, 8); font-size:30px">which correspond to the different forms of certain Pokemon, as they would affect the stats data.</h4>
+    <h3 style="text-align: center; color: rgb(255, 203, 5);
+    text-shadow:0 2px 1px rgb(42, 117, 187), 
+    0 4px 1px rgb(47, 107, 182),
+    0 5px 1px rgb(52, 97, 177),
+    0 6px 1px rgb(57, 87, 172),
+    0 7px 1px rgb(62, 77, 167);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:rgb(62, 77, 167); font-size:48px">Click on a Pokemon's Name to Learn Even More!</h3>
+    <div class="d-flex downloader" style="justify-content:center;">
+      <a href="resources/data/pokemon.csv" class="btn btn-info btn-large" role="button"><i class="fa fa-download"> Download </i></a>
     </div>
     <div class="table-responsive">
       <table border="1" class="dataframe">
@@ -29790,9 +29811,9 @@
       </table>
     </div>
 
-    <footer>
+    <footer id="foot">
       <div class="footer">
-          Copyright &copy; Maxwell Krueger 2021
+          <h3>Copyright &copy; Maxwell Krueger 2021</h3>
       </div>
     </footer>
 
